@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVisionary</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/firm.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<main>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="search-container">
+            <h1 style="color:white;">Profil</h1>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li id="home-btn" > <a href="javascript:history.go(-1)"><i class="fa fa-arrow-circle-left"></i> Retour</a></li>
+                <li id="profil-btn" style="display: none;"><a href="profil.html"><i class="fas fa-user"></i> Profil</a></li>         
+                <li id="logout-btn" style="display: none;"><i class="fa-solid fa-right-from-bracket"></i> Deconnexion</a></li>         
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Mon profil</h2><br>
+        <div class="profil"></div>
+
+            <label for="fname">Prénom :</label>
+            <input type="text" id="fname" name="fname" disabled><br><br>
+
+            <label for="lname">Nom de famille :</label>
+            <input type="text" id="lname" name="lname" disabled><br><br>
+
+            <label for="birthDate">Date de naissance :</label>
+            <input type="date" id="birthDate" name="birthDate" disabled><br><br>
+
+            <label for="adress">Adresse :</label>
+            <input type="text" id="adress" name="adress" disabled><br><br>
+
+            <label for="cp">Code postal :</label>
+            <input type="text" id="cp" name="cp" disabled><br><br>
+
+            <label for="city">Ville :</label>
+            <input type="text" id="city" name="city" disabled><br><br>
+            
+            <label for="username">Username :</label>
+            <input type="text" id="username" name="username" disabled><br><br>
+            
+            <label for="email">E-mail :</label>
+            <input type="text" id="email" name="email" disabled><br><br>
+
+            <label for="pass">Password :</label>
+            <input type="password" id="pass" name="pass" disabled><br><br>
+
+            <button id="btn_editAccount">Modifier</button>
+            <button id="btn_updateAccount" style="display: none;">Valider</button>
+
+            <button id="btn_deleteAccount" style="background-color: red;">Supprimer</button>
+
+        <div class="profil">
+    </div>
+
+<script src="js/logout.js"></script>
+<script src="js/profil.js"></script>
+<script src="js/header.js"></script>
+
+
+</body>
+</html>

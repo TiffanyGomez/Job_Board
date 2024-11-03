@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVisionary</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<main>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher une offre...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li id="home-btn" ><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li id="signup-btn"><a href="signup.html"><i class="fas fa-user"></i> Signup</a></li>                
+
+                <li id="login-btn" ><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+                <li id="profil-btn" style="display: none;"><a href="profil.html"><i class="fas fa-user"></i> Profil</a></li>         
+                <li id="logout-btn" style="display: none;"><i class="fa-solid fa-right-from-bracket"></i> Deconnexion</a></li>         
+            </ul>
+        </nav>
+    </header>
+
+    <section id="job-offers"></section> <!-- Job offers will be appended here -->
+
+    <!-- Application Modal -->
+    <div id="application-modal" style="display: none;">
+        <h2>Apply for Job</h2>
+        <form id="application-form">
+            <textarea id="application-message" placeholder="Your message..." required></textarea>
+            <button type="submit">Submit Application</button>
+            <link rel="import" />
+            <button type="button" onclick="closeModal()">Cancel</button>
+        </form>
+    </div>
+
+    <script src="js/job-listings.js"></script> <!-- JS for fetching job listings -->
+    <script src="js/login-auth.js"></script> <!-- JS for login authentication -->
+    <script src="js/logout.js"></script> <!-- JS for login authentication -->
+    <script src="js/search.js"></script> <!-- JS for search container -->
+    <script src="js/profil.js"></script> <!-- JS for profil  -->
+    <script src="js/header.js"></script> <!-- JS for profil  -->
+
+
+
+
+
+</main>
+</body>
+</html>

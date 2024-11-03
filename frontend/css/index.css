@@ -1,0 +1,241 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E3A46;
+    color: white;
+    padding: 10px 20px;
+}
+
+button {
+    background-color: #ffd700;
+}
+
+nav {
+    margin-right: 5%;
+}
+
+.logo-container .logo {
+    width: 120px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav a:hover {
+    color: #ffd700;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2E3A46;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: small;
+}
+
+.dropdown-content ul {
+    list-style-type: none; 
+    width: auto;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.dropdown-content li a {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search-container input {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-container button {
+    color: black;
+    border: none;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 32px;
+}
+
+#job-offers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusts the space between job offers */
+    padding: 20px; /* Adds padding around the job offers */
+}
+
+.job-offer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33% - 20px); /* Three items per row, adjust as necessary */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    transition: box-shadow 0.3s;
+}
+
+.job-offer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+}
+
+
+footer {
+    background-color: #2E3A46;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #1F2B34;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2E3A46;
+        width: 100%;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-container input {
+        max-width: 100%;
+    }
+
+    #slider {
+        width: 100%;
+        height: 250px;
+    }
+
+    .slide {
+        width: 150px;
+        height: 100px;
+    }
+
+    #prev, #next {
+        font-size: large;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        gap: 5px;
+    }
+
+    .search-container input {
+        max-width: 100%;
+    }
+
+    #slider {
+        height: 200px;
+    }
+
+    .slide {
+        width: 120px;
+        height: 80px;
+    }
+
+    #prev, #next {
+        font-size: medium;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+}

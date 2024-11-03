@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+.job-list {
+    margin-top: 20px;
+}
+.job-list h3 {
+    margin-bottom: 10px;
+}
+.job-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.add-job-form {
+    margin-top: 30px;
+}
+.add-job-form input,
+.add-job-form textarea,
+.add-job-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.add-job-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.add-job-form button:hover {
+    background-color: #555;
+}
